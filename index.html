@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JunoCam Editing Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="Tools">
+           <ul>
+              <li>
+                 <i class='bx bxs-brightness-half' ></i>
+                 <div class="title">
+                  <h4>Brightess</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                <i class='bx bxs-circle' ></i>
+                <div class="title">
+                  <h4>Contrast</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                 <i class='bx bxs-brush' ></i>
+                 <div class="title">
+                  <h4>Blur</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                 <i class='bx bxs-collection'></i>
+                 <div class="title">
+                  <h4>Grey Scale</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                 <i class='bx bxs-color-fill' ></i>
+                 <div class="title">
+                  <h4>Hue Filter</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                 <i class='bx bxs-magic-wand' ></i>
+                 <div class="title">
+                  <h4>Saturation</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+               <i class='bx bx-transfer-alt' ></i>
+               <div class="title">
+                  <h4>Invert Color</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+               <i class='bx bx-outline bx-rotate-180' ></i>
+               <div class="title">
+                  <h4>Opacity</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+              </li>
+              <li>
+                <i class='bx bxs-share-alt'></i>
+                <div class="title">
+                  <h4>Share</h4>
+                  <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <li id="en_de_crop">
+                  <i class='bx bx-crop'></i>
+                  <div class="title">
+                     <h4>Crop</h4>
+                     <p>Crop, Crop JPG, PNG or GIF by defining a rectangle in pixels.</p></div>
+               </li>
+               <li id="rotate_right_li">
+                  <i id="right" class='bx bx-rotate-right rotate'></i>                
+                  <div class="title">
+                     <h4>Rotate Right</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <li id="rotate_left_li">
+                  <i id="left" class='bx bx-rotate-left rotate' ></i>
+                  <div class="title">
+                     <h4>Rotate Left</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <li id="horizontal_li">
+                  <i id="horizontal" class='bx bx-horizontal-center rotate'></i>
+                  <div class="title">
+                     <h4>Flip Horizontal</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <li id="vertical_li">
+                  <i id="vertical" class='bx bx-vertical-center rotate'></i>
+                  <div class="title">
+                     <h4>Flip Vertical</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <!-- <li id="zoomIn_li">
+                  <i id="zoomIn" class='bx bx-zoom-in'></i>
+                  <div class="title">
+                     <h4>Zoom In</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+               <li id="zoomOut_li">
+                  <i id="zoomOut" class='bx bx-zoom-out'></i>
+                  <div class="title">
+                     <h4>Zoom Out</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li> -->
+               <li onclick="Download_btn()">
+                  <i class='bx bx-export' ></i>
+                  <div class="title">
+                     <h4>Download</h4>
+                     <p>BrightNess Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+
+               <li onclick="_">
+                  <i class='bx bx-brain' ></i>
+                  <div class="title">
+                     <h4>GAN</h4>
+                     <p>GAN Algorithm Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam ipsa architecto, amet atque assumenda voluptatibus quos dignissimos commodi sed molestiae veritatis. Ex dicta neque alias vel blanditiis velit consectetur.</p></div>
+               </li>
+           </ul>
+        </div>
+
+      
+
+        <div class="content">
+           <!-- <p id="logo">Edit Image</p> -->
+           <img src="https://sa-2019.s3.amazonaws.com/media/images/logo_nasa2x.original.png" alt="alternatetext" id="logo">
+           <div class="choose_image">
+              <div class="upload_img_box">
+                 <i class='bx bxs-image-add' ></i><br>
+                 <input type="file" name="selectedImage" id="selectedImage" accept="image/jpeg, image/png">
+                 <p id="hint">choose Image from folder</p>
+              </div>
+           </div>
+           <canvas id="image_canvas"></canvas>
+           <div class="image_holder">
+              <button id="remove_img_btn"><i class='bx bxs-message-square-x' ></i></button>
+              <img src="" alt="img" id="image">
+           </div>
+           <div class="options">
+              <div class="option">
+                 <input type="range" max="200" min="5" value="100" id="brightness" class="slider">
+                 <p id="brightVal" class="show_value">100</p>
+              </div>
+              <div class="option">
+                <input type="range" max="200" min="5" value="100" id="contrast" class="slider">
+                <p id="contrastVal" class="show_value">100</p>
+             </div>
+              <div class="option">
+                 <input type="range" max="40" min="0" value="0" id="blur" class="slider">
+                 <p id="blurVal" class="show_value">0</p>
+              </div>
+              <div class="option">
+                 <input type="range" max="100" min="0" value="0" id="greyScale" class="slider">
+                 <p id="greyVal" class="show_value">0</p>
+              </div>
+              <div class="option">
+                 <input type="range" max="200" min="0" value="0" id="hue" class="slider">
+                 <p id="hueVal" class="show_value">0</p>
+              </div>
+              <div class="option">
+                 <input type="range" max="100" min="0" value="1" id="saturation" class="slider">
+                 <p id="saturationVal" class="show_value">1</p>
+              </div>
+              <div class="option">
+               <input type="range" max="100" min="0" value="0" id="invertion" class="slider">
+               <p id="invertionVal" class="show_value">1</p>
+               </div>
+              <div class="option">
+               <input type="range" max="100" min="1" value="100" id="opacity" class="slider">
+               <p id="opacityVal" class="show_value">100</p>
+              </div>
+           </div>
+
+            <!-- added crop button -->
+            <button id="crop">Crop</button>
+
+           <button id="clearAll"><span>Reset</span><i class='bx bx-reset' ></i></button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script>
+     <script src="main.js"></script>
+</body>
+</html>
